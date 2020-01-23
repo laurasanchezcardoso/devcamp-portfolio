@@ -67,7 +67,6 @@ class BlogsController < ApplicationController
       @blog = Blog.find(params[:id])
     end
 
-    #test key
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
       params.require(:blog).permit(:title, :body)
